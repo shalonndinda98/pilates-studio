@@ -200,7 +200,7 @@ export default function Home() {
 
             <div className="hero-visual reveal is-visible" style={{ animationDelay: "100ms" }}>
               <div className="hero-image-frame">
-                <img src="/manus-storage/kilimani-pilates-hero_c8f201d9.jpg" alt="Pilates movement on a reformer in a sunlit studio" />
+                <img src="/assets/kilimani-pilates-hero.jpg" alt="Pilates movement on a reformer in a sunlit studio" />
                 <div className="image-wash" />
                 <div className="hero-image-note">
                   <span className="note-line" />
