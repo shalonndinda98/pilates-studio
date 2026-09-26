@@ -94,8 +94,8 @@ h1 em, h2 em { color: var(--terracotta); font-weight: 500; }
 .hero-proof strong { color: rgba(255,255,255,.86); font-weight: 500; }
 .hero-proof p span { opacity: .76; }
 .hero-visual { position: relative; min-height: 600px; display: flex; align-items: center; justify-content: flex-end; }
-.hero-image-frame { position: relative; width: min(100%, 530px); height: 600px; overflow: hidden; background: #8e927c; clip-path: polygon(13% 0, 100% 0, 100% 93%, 88% 100%, 0 100%, 0 8%); }
-.hero-image-frame img { width: 100%; height: 100%; object-fit: cover; object-position: 64% center; filter: saturate(.75) contrast(.94); animation: slow-drift 13s ease-in-out infinite alternate; }
+.hero-image-frame { position: relative; width: min(100%, 530px); height: auto; aspect-ratio: 3 / 2; overflow: hidden; background: #8e927c; }
+.hero-image-frame img { width: 100%; height: 100%; object-fit: contain; object-position: center; filter: saturate(.75) contrast(.94); }
 .image-wash { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(39,53,47,.35), transparent 42%), linear-gradient(0deg, rgba(33,43,37,.34), transparent 32%); }
 .hero-image-note { position: absolute; left: 28px; bottom: 33px; display: flex; align-items: flex-start; gap: 12px; color: rgba(255,255,255,.82); font: 400 11px/1.45 var(--mono); letter-spacing: .06em; text-transform: uppercase; }
 .note-line { width: 31px; height: 1px; margin-top: 7px; background: currentColor; }
@@ -249,7 +249,7 @@ h1 em, h2 em { color: var(--terracotta); font-weight: 500; }
   .hero-intro { max-width: 520px; }
   .hero-proof { margin-top: 42px; }
   .hero-visual { min-height: auto; justify-content: flex-start; padding-bottom: 62px; }
-  .hero-image-frame { width: min(100%, 620px); height: 500px; }
+  .hero-image-frame { width: min(100%, 620px); height: auto; aspect-ratio: 3 / 2; }
   .hero-meta { gap: 10px; padding-bottom: 24px; }
   .hero-meta > div { align-items: flex-start; }
   .hero-meta strong { font-size: 10px; }
@@ -274,7 +274,7 @@ h1 em, h2 em { color: var(--terracotta); font-weight: 500; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 20px; }
   .hero-proof { margin-top: 38px; }
   .hero-visual { padding-bottom: 47px; }
-  .hero-image-frame { height: 430px; clip-path: polygon(8% 0, 100% 0, 100% 95%, 90% 100%, 0 100%, 0 6%); }
+  .hero-image-frame { height: auto; aspect-ratio: 3 / 2; }
   .experience-badge { top: 23px; right: -15px; }
   .hero-asterisk { left: 7px; top: -8px; font-size: 39px; }
   .hero-meta { grid-template-columns: 1fr; gap: 17px; padding-top: 19px; padding-bottom: 29px; }
